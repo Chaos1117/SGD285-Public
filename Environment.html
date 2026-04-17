@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+	  <a-scene>
+		  <a-sky color="#d9d9d9"></a-sky>
+		  <!--	Valid values: none, default, contact, egypt, checkerboard, forest,
+	goaland, yavapai, goldmine, threetowers, poison, arches, tron,
+	japan, dream, volcano, starry, osiris, moon-->
+
+		  <a-entity environment="preset:moon"></a-entity>
+
+		  <a-assets>
+
+			  <a-asset-item id="catscene_gltf" src="https://raw.githubusercontent.com/Chaos1117/SGD285-Public/refs/heads/main/catscene.gltf"></a-asset-item>
+			  <a-asset-item id="crowscene_gltf" src="https://raw.githubusercontent.com/Chaos1117/SGD285-Public/refs/heads/main/crowscene.gltf"></a-asset-item>
+			  <a-asset-item id="foxscene_gltf" src="https://raw.githubusercontent.com/Chaos1117/SGD285-Public/refs/heads/main/foxscene.gltf"></a-asset-item>
+
+		  </a-assets>
+
+		  <a-gltf-model position="0 1.6 -2" rotation="0 0 0" scale="4 4 4" src="#catscene_gltf"></a-gltf-model>
+		  <a-gltf-model position="0 1.6 -2" rotation="0 0 0" scale="4 4 4" src="#crowscene_gltf"></a-gltf-model>
+		  <a-gltf-model position="0 1.6 -2" rotation="0 0 0" scale="4 4 4" src="#foxscene_gltf"></a-gltf-model>
+
+	  </a-scene>
+  </body>
+</html>
